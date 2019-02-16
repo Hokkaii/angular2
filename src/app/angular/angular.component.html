@@ -1,0 +1,10 @@
+<p>
+  this is the Angular component , and you can see the hero that you chosen!!
+</p>
+<a [routerLink]="['']">please click me yo go to the homepage</a>
+<ul>
+  <li *ngFor="let item of list" [hidden]="item.id !== getNumber(chosenId)">{{item.id
+    +
+    item.name}}</li>
+</ul>
+<input [(ngModel)]="value" placeholder="name">

@@ -1,0 +1,17 @@
+<!-- 这里是heroes的子组件 -->
+<div *ngIf="hero">
+  <h2>{{ hero.name | uppercase }} Details</h2>
+  <a [routerLink]="['/detail',11]">转到11</a>
+  <a [routerLink]="['/detail',12]">转到12</a>
+  <a [routerLink]="['/detail',13]">转到13</a>
+  <a [routerLink]="['/detail',14]">转到14</a>
+  <a [routerLink]="['/detail',15]">转到15</a>
+  <div>
+    <span>id: </span>{{hero.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="hero.name" placeholder="name" />
+      <!-- [(ngModel)]是angular中双向绑定的语法 -->
+    </label>
+  </div>
+</div>

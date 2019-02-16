@@ -1,0 +1,14 @@
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+    
+.list{
+    height: 100vh;
+    width:30%;
+    border:1px solid black;
+}
+/* .left{
+    
+} */
